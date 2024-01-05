@@ -1,3 +1,13 @@
+/*
+● Paleta de colores
+    Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Gris oscuro: #666;
+    Gris claro: #ebebeb;
+    Verde: #39b54a;
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +15,7 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
+/*-----HEADER-----*/
 .main-header {
     background-color: #eac926;
     padding: 20px;
@@ -49,6 +59,11 @@ body {
     padding: 5px 0;
     font-size: 17px;
 }
+/*----------*/
+
+/*-----MAIN-----*/
+
+/*----------*/
 
 @media (min-width: 768px) {
     .main-header-top-bar {
@@ -73,7 +88,6 @@ body {
         margin:  0 5px;
     }
 }
-
 
 @media (min-width: 1200px) {
     .logo {
