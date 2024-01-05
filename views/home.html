@@ -40,6 +40,44 @@ rel="stylesheet" />
         </nav>
     </header>
 
+    <form action="/crear-producto" method="POST" class="create-form">
+        <div class="form_control">
+            <label>Nombre del producto:</label>
+            <input type="text" name="nombre" class="control">
+        </div>
+        <div class="form_control">
+            <label>Precio:</label>
+            <input type="text" name="precio" placeholder="123.56" class="control">
+        </div>
+        <div class="form_control">
+            <label>Categoría:</label>
+            <select name="categoria" class="control">
+                <option value="hogar">Hogar</option>
+                <option value="electro">Electro</option>
+                <option value="indumentaria">Indumentaria</option>
+            </select>
+        </div>
+        <div class="form_control">
+            <label>Ciudad:</label>
+            <select name="ciudad" class="control">
+                <option value="baires">Buenos Aires</option>
+                <option value="ros">Rosario</option>
+                <option value="mdz">Mendoza</option>
+            </select>
+        </div>
+        <div class="form_control">
+            <label>Descripción:</label>
+            <textarea name="descripción" class="control"></textarea>
+        </div>
+        <div class="form_control">
+            <label>Está en oferta:</label>
+            <input type="checkbox" name="enOferta">
+        </div>
+        <button type="submit" class="buttom_form">Guardar</button>
+        <button type="reset" class="buttom_form">Borrar</button>
+    </form>
+
+
     <main>
         <section>
             <h2 class="title">Basado en tu última visita</h2>
