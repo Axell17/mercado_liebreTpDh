@@ -32,50 +32,12 @@
             </ul>
 
             <ul class="right-navbar">
-                <li><a href="#">Creá tu ceunta <i class="fas fa-id-card"></i></a></li></a></li>
+                <li><a href="http://localhost:3006/registro">Creá tu ceunta <i class="fas fa-id-card"></i></a></li></a></li>
                 <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li></a></li>
                 <li><a href="#">Mis compras <i class="fas fa-shopping-cart"></i></a></li></a></li>
             </ul>
         </nav>
     </header>
-
-    <form action="/crear-producto" method="POST" class="create-form">
-        <div class="form_control">
-            <label>Nombre del producto:</label>
-            <input type="text" name="nombre" class="control">
-        </div>
-        <div class="form_control">
-            <label>Precio:</label>
-            <input type="text" name="precio" placeholder="123.56" class="control">
-        </div>
-        <div class="form_control">
-            <label>Categoría:</label>
-            <select name="categoria" class="control">
-                <option value="hogar">Hogar</option>
-                <option value="electro">Electro</option>
-                <option value="indumentaria">Indumentaria</option>
-            </select>
-        </div>
-        <div class="form_control">
-            <label>Ciudad:</label>
-            <select name="ciudad" class="control">
-                <option value="baires">Buenos Aires</option>
-                <option value="ros">Rosario</option>
-                <option value="mdz">Mendoza</option>
-            </select>
-        </div>
-        <div class="form_control">
-            <label>Descripción:</label>
-            <textarea name="descripción" class="control"></textarea>
-        </div>
-        <div class="form_control">
-            <label>Está en oferta:</label>
-            <input type="checkbox" name="enOferta">
-        </div>
-        <button type="submit" class="buttom_form">Guardar</button>
-        <button type="reset" class="buttom_form">Borrar</button>
-    </form>
-
 
     <main>
         <section>
@@ -213,25 +175,28 @@
         </section>
     </main>
 
-
     <footer>
-        <div class="footer_icon"><i class="fas fa-credit-card"></i></div>            
-        <div class="footer_content">                
-            <b class="footer_title">Pagá con tarjeta o en efectivo</b>
-            <p class="footer_description">Con mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-        </div>
-
-        <div class="footer_icon"><i class="fas fa-gift"></i></div>            
-        <div class="footer_content">                
-            <b class="footer_title">Envío gratis desde $2.500</b>
-            <p class="footer_description">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
-        </div>
-
-        <div class="footer_icon"><i class="fas fa-user-shield"></i></div>            
-        <div class="footer_content">                
-            <b class="footer_title">Seguridad, de principio a fin</b>
-            <p class="footer_description">¿No te gusta? ¡Devolvelo! En Mercado Liebre. no hay nada que no puedas hacer, porque estás simepre protegid@.</p>
-        </div>
+        <article class="footer_article">
+            <div class="footer_icon"><i class="fas fa-credit-card"></i></div>            
+            <div class="footer_content">                
+                <b class="footer_title">Pagá con tarjeta o en efectivo</b>
+                <p class="footer_description">Con mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+        </article>
+        <article class="footer_article">
+            <div class="footer_icon"><i class="fas fa-gift"></i></div>            
+            <div class="footer_content">                
+                <b class="footer_title">Envío gratis desde $2.500</b>
+                <p class="footer_description">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+        </article>
+        <article class="footer_article">
+            <div class="footer_icon"><i class="fas fa-user-shield"></i></div>            
+            <div class="footer_content">                
+                <b class="footer_title">Seguridad, de principio a fin</b>
+                <p class="footer_description">¿No te gusta? ¡Devolvelo! En Mercado Liebre. no hay nada que no puedas hacer, porque estás simepre protegid@.</p>
+            </div>
+        </article>
         <div class="copyright">
             <p>Copyright © 1999-2020 Mercado Liebre S.R.L.</p>
         </div>

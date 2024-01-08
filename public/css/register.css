@@ -3,29 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-/*.create_form {
-    padding: 20px 15px;
-}
-.form_control {
-    margin-bottom: 15px;
-}
-.form_control label {
-    margin-bottom: 5px;
-    font-style: italic;
-    display: block;
-}
-.control {
-    width: 100%;
-    padding: 8px;
-}
-.buttom_form {
-    background-color: #39b54a;
-    border: none;
-    font-size: 20px;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-}*/
 main {
     background-color: #fff;
 }
@@ -88,4 +65,26 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+@media (max-width: 425px) {
+    .register_box {
+        max-width: 90%;
+    }
+
+    .form_control,
+    .form_control_perfil label,
+    .form_control label,
+    .form_control input,
+    .title_register,
+    .buttons,
+    .button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer_content {
+        width: 90%;
+    }
 }
