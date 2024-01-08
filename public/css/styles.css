@@ -61,29 +61,6 @@ body {
     padding: 5px 0;
     font-size: 17px;
 }
-.create_form {
-    padding: 20px 15px;
-}
-.form_control {
-    margin-bottom: 15px;
-}
-.form_control label {
-    margin-bottom: 5px;
-    font-style: italic;
-    display: block;
-}
-.control {
-    width: 100%;
-    padding: 8px;
-}
-.buttom_form {
-    background-color: #39b54a;
-    border: none;
-    font-size: 20px;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
 /*----------*/
 
 /*-----MAIN-----*/
