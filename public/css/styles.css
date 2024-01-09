@@ -22,7 +22,21 @@ body {
     background-color: #eac926;
     padding: 20px;
 }
-
+.main-header-top-bar input {
+    border: none;
+    max-width: 50%;
+    border-radius: 8px;
+    height: 40px;    
+}
+.bar_logo {
+    display: flex;
+    align-items: center;
+}
+.bar_logo i {
+    background-color: white;
+    height: 40px;
+    font-size: 20px;
+}
 .hamburguer-buttom {
     background-color: #03264c;
     color: #ffffff;
@@ -36,7 +50,7 @@ body {
 }
 
 .logo {
-    width: 200px;
+    width: 50%;
 }
 
 .copy-header {
@@ -107,7 +121,11 @@ main {
     max-width: 280px;
     margin-bottom: 10px;
     padding: 5px 0;
+    transition: 450ms;
     
+}
+.general_box:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 .product_info > div {
     display: flex;
@@ -132,6 +150,10 @@ main {
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: 450ms;
+}
+.send_icon:hover {
+    transform: rotate(-90deg);
 }
 .price {
     font-size: 18px;
@@ -155,10 +177,10 @@ main {
 /*----------*/
 
 /*-----FOOTER-----*/
-.footer_content {
+.footer_article {
     margin-top: 30px;
     text-align: center;
-    max-width: 70%;
+    max-width: 300px;
     margin: 0 auto;
 }
 .footer_icon {
@@ -166,6 +188,10 @@ main {
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
+    transition: 540ms;
+}
+.footer_icon:hover {
+    color: #e91d0a;
 }
 .footer_description {
     font-size: 12px;
@@ -197,6 +223,10 @@ main {
     }
     .main-navbar li {
         margin:  0 5px;
+    }
+    .footer_container {
+        display: flex;
+        font-size: 20px;
     }
 }
 
@@ -240,5 +270,11 @@ main {
     }
     .general_box {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 1438px) {
+    .footer_article {
+        max-width: 420px;
     }
 }

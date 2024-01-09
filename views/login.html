@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Usuario</title>
+    <title>Login</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -40,73 +40,26 @@
         </nav>
     </header>
 
+
     <main>
-        <div class="register_container">
-            <form action="/register" method="POST" class="register_box">
-                <div class="form_control">
-                    <input type="text" name="nombre_apellido" placeholder="Nombre y apellido" class="control">
-                </div>
+        <div class="login_container">
+            <form action="/login" method="POST" class="login_box">
                 <div class="form_control">
                     <input type="text" name="usuario" placeholder="Nombre de usuario" class="control">
                 </div>
                 <div class="form_control">
-                    <input type="email" name="email" placeholder="E-mail" class="control">
+                    <input type="password" name="contrasena" placeholder="Eligí tu sontraseña" class="control">
                 </div>
-                <div class="form_control">
-                    <label class="title_register">Fecha de nacimiento</label>
-                    <input type="date" name="fecha" class="control">
-                </div>
-                <div class="form_control">
-                    <input type="text" name="domicilio" placeholder="Domicilio" class="control">
-                </div>
-                <div class="form_control_perfil">
-                    <label class="title_register">Perfil del usuario</label>
-                    <input type="checkbox" name="comprador" id="comprador">
-                    <label for="comprador">Comprador</label>
-    
-                    <input type="checkbox" name="vendedor" id="vendedor" class="vendedor">
-                    <label for="vendedor">Vendedor</label>
-                </div>
-                <div class="form_control">
-                    <h2 class="title_register">Intereses</h2>
-
-                    <input type="checkbox" name="electro" id="electro">
-                    <label for="electro">Electro</label><br>
-    
-                    <input type="checkbox" name="moda" id="moda">
-                    <label for="moda">Moda</label><br>
-    
-                    <input type="checkbox" name="hogar" id="hogar">
-                    <label for="hogar">Hogar</label><br>
-    
-                    <input type="checkbox" name="jugueteria" id="jugueteria">
-                    <label for="jugueteria">Juguetería</label><br>
-    
-                    <input type="checkbox" name="vida_sana" id="vida_sana">
-                    <label for="vida_sana">Vida sana</label><br>
-                </div>
-                <div>
-                    <label for="foto" class="title_register">Foto de perfil:</label>
-                    <input type="file" name="foto" accept=".jpg" required>
-                </div>
-                <div class="form_control">
-                    <label class="title_register">Contraseña:</label>
-                    <input type="password" name="contrasena" class="control"><br>
-                    <label class="title_register">Confirmar contraseña:</label>
-                    <input type="password" name="conf_contrasena" class="control">
-                </div>
-                
                 <div class="buttons">
-                    <button type="submit" class="buttom_form">Guardar</button>
-                    <button type="reset" class="buttom_form">Borrar</button>
+                    <button type="submit" class="buttom_form">Enviar</button>
                     <a href="http://localhost:3006/"><button type="button">Regresar</button></a>
-                    
                 </div>
                 
             </form>
         </div>        
     </main>
-    
+
+
     <footer>
         <div class="footer_container">
             <article class="footer_article">
@@ -136,5 +89,6 @@
             <p>Copyright © 1999-2020 Mercado Liebre S.R.L.</p>
         </div>
     </footer>
+
 </body>
-</html>  
+</html>
