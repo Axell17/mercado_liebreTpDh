@@ -90,6 +90,15 @@ main {
     margin: auto;
     text-align: center;
 }*/
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner img {
+    width: 75%;
+    height: auto;
+}
 .title {
     color: #666;
     font-size: 24px;
@@ -234,7 +243,7 @@ main {
     .logo {
         width: 250px;
     }
-    .main-header-top-bar, .main-navbar {
+    .main-header-top-bar, .main-navbar{
         max-width: 1200px;
         margin: auto;
     }
@@ -255,6 +264,18 @@ main {
     }
     .main-navbar a {
         font-size:  19px;
+    }
+}
+@media (min-width: 1400px) {
+    .container_products, .banner {
+        max-width: 1400px;
+        margin: auto;
+    }
+}
+@media (min-width: 1600px) {
+    .footer_container, .copyright {
+        max-width: 1600px;
+        margin: auto;
     }
 }
 
